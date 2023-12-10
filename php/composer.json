@@ -1,0 +1,29 @@
+{
+    "name": "mrsquaare/app",
+    "autoload": {
+        "psr-4": {
+            "MrSquaare\\App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MrSquaare\\App\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Guillaume Bonnet",
+            "email": "mrsquaare@mrsquaare.fr"
+        }
+    ],
+    "scripts": {
+        "test": "phpunit",
+        "test:coverage": "XDEBUG_MODE=coverage phpunit --coverage-html coverage --coverage-clover coverage/cov.xml"
+    },
+    "require": {
+        "php": "^7.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    }
+}

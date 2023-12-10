@@ -1,0 +1,21 @@
+{
+	"name": "PHP",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "devcontainer",
+	"workspaceFolder": "/workspace",
+	"forwardPorts": [
+		"devcontainer:80"
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker",
+				"DEVSENSE.phptools-vscode",
+				"xdebug.php-debug",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"ryanluker.vscode-coverage-gutters"
+			]
+		}
+	}
+}
+
